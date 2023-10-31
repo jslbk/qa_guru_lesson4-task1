@@ -1,0 +1,23 @@
+build/
+**/build/
+!.mvn/wrapper/maven-wrapper.jar
+!gradle/wrapper
+!**/src/main/**
+!**/src/test/**
+gi
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### Allure ###
+.allure
+
+### Gradle ###
+.gradle
+build.gradle.kts
+settings.gradle.kts
+
+### Logs ###
+*.log
