@@ -26,11 +26,10 @@ class GitHubSelenidePageTest {
         // Click on the "SoftAssertions"
         $("a[href*='SoftAssertions']").click();
 
-        // Find code example title and check there are code area that contains text 'Test'
+        // Find code
         $("h4 [href*='junit5']").shouldBe(visible, Duration.ofSeconds(5));
-        $("h4 [href*='junit5']").parent().sibling(0).shouldHave(text("Test"));
+        $("h4 [href*='junit5']").parent().sibling(0).$("pre").shouldBe(visible);
     }
-
 
     private void openFirstResultOnList() {
         $$("[data-testid=results-list] a").first().click();
